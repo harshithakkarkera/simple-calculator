@@ -9,34 +9,53 @@
 </head>
 <body>
 
-<div class="calculator container mt-5">
-  <input type="text" id="display" class="form-control mb-2" readonly>
-  <div class="row">
-    <div class="numbers col">
-      <button class="btn btn-secondary" onclick="appendToDisplay('7')">7</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('8')">8</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('9')">9</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('4')">4</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('5')">5</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('6')">6</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('1')">1</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('2')">2</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('3')">3</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('0')">0</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('.')">.</button>
-    </div>
-    <div class="operations col">
-      <button class="btn btn-secondary" onclick="appendToDisplay('%')">%</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('/')">/</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('*')">*</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('-')">-</button>
-      <button class="btn btn-secondary" onclick="appendToDisplay('+')">+</button>
-      <button class="btn btn-secondary" onclick="calculate()">=</button>
-      <button class="btn btn-secondary" onclick="clearDisplay()">AC</button>
+<div class="container mt-5">
+  <div class="calculator">
+    <input type="text" id="display" class="form-control mb-2" readonly>
+    <div class="row">
+      <div class="col-9">
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('7')">7</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('8')">8</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('9')">9</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('4')">4</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('5')">5</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('6')">6</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('1')">1</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('2')">2</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('3')">3</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('0')">0</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('.')">.</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('%')">%</button>
+          <button class="btn btn-secondary col" onclick="clearDisplay()">AC</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('/')">/</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('*')">*</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="appendToDisplay('-')">-</button>
+          <button class="btn btn-secondary col" onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div class="row">
+          <button class="btn btn-secondary col" onclick="calculate()">=</button>
+        </div>
+      </div>
     </div>
   </div>
-  <script src="script.js"></script>
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
